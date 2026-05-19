@@ -518,7 +518,7 @@ runtimeClassName: ""
 ## @param podSecurityContext.sysctls sysctl settings of the MongoDB(&reg;) pod(s)'
 ##
 podSecurityContext:
-  enabled: true
+  enabled: false
   fsGroup: 1001
   ## sysctl settings
   ## Example:
@@ -534,7 +534,7 @@ podSecurityContext:
 ## @param containerSecurityContext.runAsNonRoot Set MongoDB(&reg;) container's Security Context runAsNonRoot
 ##
 containerSecurityContext:
-  enabled: true
+  enabled: false
   runAsUser: 1001
   runAsNonRoot: true
 ## MongoDB(&reg;) containers' resource requests and limits.
