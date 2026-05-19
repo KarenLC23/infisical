@@ -377,3 +377,22 @@ redis:
   architecture: standalone
   auth:
     enabled: false
+
+
+##============== POSTGRESQL====================##
+postgresql:
+  enabled: true
+
+  auth:
+    username: infisical
+    password: infisical
+    database: infisical
+
+  primary:
+    persistence:
+      enabled: false
+
+  image:
+    registry: docker.io
+    repository: bitnami/postgresql
+    tag: 17
