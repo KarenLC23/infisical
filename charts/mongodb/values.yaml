@@ -519,7 +519,7 @@ runtimeClassName: ""
 ##
 podSecurityContext:
   enabled: true
-  fsGroup: 1001
+  fsGroup: 0
   ## sysctl settings
   ## Example:
   ## sysctls:
@@ -535,7 +535,7 @@ podSecurityContext:
 ##
 containerSecurityContext:
   enabled: true
-  runAsUser: 1001
+  runAsUser: 0
   runAsNonRoot: true
 ## MongoDB(&reg;) containers' resource requests and limits.
 ## ref: https://kubernetes.io/docs/user-guide/compute-resources/
@@ -1363,7 +1363,7 @@ arbiter:
   ##
   containerSecurityContext:
     enabled: true
-    runAsUser: 1001
+    runAsUser: 0
     runAsNonRoot: true
   ## MongoDB(&reg;) Arbiter containers' resource requests and limits.
   ## ref: https://kubernetes.io/docs/user-guide/compute-resources/
@@ -1670,7 +1670,7 @@ hidden:
   ##
   podSecurityContext:
     enabled: true
-    fsGroup: 1001
+    fsGroup: 0
     ## sysctl settings
     ## Example:
     ## sysctls:
@@ -1686,7 +1686,7 @@ hidden:
   ##
   containerSecurityContext:
     enabled: true
-    runAsUser: 1001
+    runAsUser: 0
     runAsNonRoot: true
   ## MongoDB(&reg;) Hidden containers' resource requests and limits.
   ## ref: https://kubernetes.io/docs/user-guide/compute-resources/
