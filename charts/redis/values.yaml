@@ -1483,8 +1483,8 @@ metrics:
   ##
   image:
     registry: docker.io
-    repository: bitnami/redis-exporter
-    tag: 1.52.0-debian-11-r5
+    repository: bitnami/redis-sentinel
+    tag: "7.2"
     digest: ""
     pullPolicy: IfNotPresent
     ## Optionally specify an array of imagePullSecrets.
