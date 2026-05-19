@@ -150,9 +150,10 @@ mongodb:
   ## @param mongodb.image.pullPolicy MongoDB(&reg;) image pull policy
   ##
   image:
+    registry: docker.io
     repository: bitnami/mongodb
+    tag: "8.0.12-debian-12-r2"
     pullPolicy: IfNotPresent
-    tag: "7.0"
   ## Bitnami MongoDB(&reg;) pods' liveness probe
   ## ref: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#container-probes
   ## @param mongodb.livenessProbe.enabled Enable livenessProbe
