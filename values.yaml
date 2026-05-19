@@ -224,7 +224,7 @@ mongodb:
   persistence:
     ## @param mongodb.persistence.enabled Enable database persistence
     ##
-    enabled: true
+    enabled: false
     ## @param mongodb.persistence.existingClaim Existing persistent volume claim name
     ##
     existingClaim: ""
